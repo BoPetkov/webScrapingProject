@@ -1,0 +1,22 @@
+.body-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.body-wrap>.content {
+    flex: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.content img {
+    width: 200px;
+    height: auto;
+}

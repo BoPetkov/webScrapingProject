@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{title}
+        link(rel="stylesheet", href="/css/main.css")
+    body
+        div.body-wrap
+            for item in content
+                div.content 
+                    - url = item.link
+                    a(href=url, target="_blank")
+                        - image = item.image
+                        img(src=image, alt="image")
+                        h3 #{item.title} 
+                        p #{item.description}
